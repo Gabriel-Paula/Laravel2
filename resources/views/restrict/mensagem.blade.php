@@ -30,7 +30,7 @@
                 @endif
             </td>
             <td>
-                <form method="POST" action="{{route('mensagem.detroy', $mensagem->id)}}" onsubmit="return confirm('tem certeza?');">
+                <form method="POST" action="{{route('mensagem.destroy', $mensagem->id)}}" onsubmit="return confirm('tem certeza?');">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="button">

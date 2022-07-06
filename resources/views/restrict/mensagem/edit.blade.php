@@ -1,9 +1,9 @@
 @extends('restrict.layout')
 
 @section('content')
-@if(count($erros)>0)
+@if(count($errors)>0)
 <ul class="validator">
-    @foreach($erros->all() as $error)
+    @foreach($errors->all() as $error)
     <li>{{$error}}</li>
     @endforeach
 </ul>
